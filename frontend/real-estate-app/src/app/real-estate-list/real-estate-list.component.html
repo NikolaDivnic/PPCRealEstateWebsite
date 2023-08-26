@@ -1,0 +1,19 @@
+  <div *ngFor="let estate of estates">
+    <app-estate-card [estate]="estate"></app-estate-card>
+  </div>
+
+  <nav aria-label="Page navigation example">
+    <ul class="pagination">
+      <li class="page-item" [class.disabled]="currentPage === 1">
+        <a class="page-link" href="#" (click)="fetchRealEstateData(currentPage - 1); $event.preventDefault()">Previous</a>
+      </li>
+      <li class="page-item" *ngFor="let page of [].constructor(totalPages); let i = index" [class.active]="currentPage === i + 1">
+        <a class="page-link" href="#" (click)="fetchRealEstateData(i + 1); $event.preventDefault()">{{ i + 1 }}</a>
+      </li>
+      <li class="page-item" [class.disabled]="currentPage === totalPages">
+        <a class="page-link" href="#" (click)="fetchRealEstateData(currentPage + 1); $event.preventDefault()">Next</a>
+      </li>
+    </ul>
+  </nav>
+
+  

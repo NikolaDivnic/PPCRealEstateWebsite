@@ -1,0 +1,126 @@
+<div class="filter-container">
+    <h5>Cena</h5>
+    <div class="d-flex justify-content-between">
+      <input type="number" placeholder="Price from" [(ngModel)]="priceFrom" class="form-control">
+      <input type="number" placeholder="Price to" [(ngModel)]="priceTo" class="form-control">
+    </div>
+    <h5>Velicina</h5>
+    <div class="d-flex justify-content-between">
+      <input type="number" placeholder="Size from" [(ngModel)]="sizeFrom" class="form-control">
+      <input type="number" placeholder="Size to" [(ngModel)]="sizeTo" class="form-control">
+    </div>
+    <h5>Cena po kvadratu</h5>
+    <div class="d-flex justify-content-between">
+      <input type="number" placeholder="Price per sqm from" [(ngModel)]="pricePerSqmFrom" class="form-control">
+      <input type="number" placeholder="Price per sqm to" [(ngModel)]="pricePerSqmTo" class="form-control">
+    </div>
+    <h5>Broj soba</h5>
+    <div class="d-flex justify-content-between">
+      <select [(ngModel)]="roomsFrom" class="form-control">
+        <option value="0">Broj soba od</option>
+        <option value="0.5">0.5</option>
+        <option value="1">1</option>
+        <option value="1.5">1.5</option>
+        <option value="2">2</option>
+        <option value="2.5">2.5</option>
+        <option value="3">3</option>
+        <option value="3.5">3.5</option>
+        <option value="4">4</option>
+        <option value="4.5">4.5</option>
+        <option value="5">5</option>
+        <option value="5.5">5+</option>
+      </select>
+      <select [(ngModel)]="roomsTo" class="form-control">
+        <option value="0">Broj soba do</option>
+        <option value="0.5">0.5</option>
+        <option value="1">1</option>
+        <option value="1.5">1.5</option>
+        <option value="2">2</option>
+        <option value="2.5">2.5</option>
+        <option value="3">3</option>
+        <option value="3.5">3.5</option>
+        <option value="4">4</option>
+        <option value="4.5">4.5</option>
+        <option value="5">5</option>
+        <option value="5.5">5+</option>
+      </select>
+    </div>
+    <h5>Sprat</h5>
+    <div class="d-flex justify-content-between">
+      <select [(ngModel)]="floorFrom" class="form-control">
+        <option value="-3">SUT</option>
+        <option value="-2">PSUT</option>
+        <option value="-1">PR</option>
+        <option value="0">VPR</option>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="6">6</option>
+        <option value="7">7</option>
+        <option value="8">8</option>
+        <option value="9">9</option>
+        <option value="10">10</option>
+        <option value="11">11</option>
+        <option value="12">12</option>
+        <option value="13">13</option>
+        <option value="14">14</option>
+        <option value="15">15</option>
+        <option value="16">16</option>
+        <option value="17">17</option>
+        <option value="18">18</option>
+        <option value="19">19</option>
+        <option value="20">20</option>
+        <option value="21">21</option>
+        <option value="22">22</option>
+        <option value="23">23</option>
+        <option value="24">24</option>
+        <option value="25">25</option>
+        <option value="26">26</option>
+        <option value="27">27</option>
+        <option value="28">28</option>
+        <option value="29">29</option>
+        <option value="30">30</option>
+      </select>
+      <select [(ngModel)]="floorTo" class="form-control">
+        <option value="-3">SUT</option>
+        <option value="-2">PSUT</option>
+        <option value="-1">PR</option>
+        <option value="0">VPR</option>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="6">6</option>
+        <option value="7">7</option>
+        <option value="8">8</option>
+        <option value="9">9</option>
+        <option value="10">10</option>
+        <option value="11">11</option>
+        <option value="12">12</option>
+        <option value="13">13</option>
+        <option value="14">14</option>
+        <option value="15">15</option>
+        <option value="16">16</option>
+        <option value="17">17</option>
+        <option value="18">18</option>
+        <option value="19">19</option>
+        <option value="20">20</option>
+        <option value="21">21</option>
+        <option value="22">22</option>
+        <option value="23">23</option>
+        <option value="24">24</option>
+        <option value="25">25</option>
+        <option value="26">26</option>
+        <option value="27">27</option>
+        <option value="28">28</option>
+        <option value="29">29</option>
+        <option value="30">30</option>
+      </select>
+    </div>
+    <h5>Lokacija</h5>
+    <input type="text" placeholder="Lokacija" [(ngModel)]="location" class="form-control">
+    <button (click)="applyFilters()" class="btn btn-primary">Trazi</button>
+</div>

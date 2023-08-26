@@ -1,0 +1,16 @@
+div {   
+    margin-bottom: 20px;
+  }
+  h2 {
+    margin: 0;
+  }
+  p {
+    margin: 5px 0;
+  }
+  .pagination {
+    justify-content: center;
+  }
+  .page-item.disabled .page-link {
+    color: #ccc;
+    pointer-events: none;
+  }

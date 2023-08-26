@@ -1,0 +1,19 @@
+<div class="card d-flex flex-row align-items-center g-3">
+  <div class="col-sm-3 col-lg-3">
+    <img [src]="estate.image" class="img-fluid left-image" alt="Real Estate Image">
+  </div>
+  <div class="col-sm-6 col-lg-6">
+    <h6 class="card-title text-center">{{ estate.title }}dssdsdadasdsas sdasdaadsdas</h6>
+    <p class="card-text text-center">{{ estate.location }} sdasd sadssadasdsa </p>
+    <div class="d-flex justify-content-around">
+      <p class="card-text"><span class="label-text">Sprat</span><br><span class="value-text">{{ estate.floor }}/{{ estate.totalFloors }}</span></p>
+      <p class="card-text"><span class="label-text">Velicina</span><br><span class="value-text">{{ estate.size }}</span></p>
+      <p class="card-text"><span class="label-text">Sobe</span><br><span class="value-text">{{ estate.numberOfRooms }}</span></p>
+    </div>
+  </div>
+  <div class="col-sm-3 col-lg-3 text-end">
+    <p class="card-text right-text">{{ estate.price }}</p>
+    <p class="card-text right-text">{{ estate.pricePerSquareMeter }}</p>
+    <img [src]="estate.image" class="img-fluid right-image" alt="Agency Logo">
+  </div>
+</div>

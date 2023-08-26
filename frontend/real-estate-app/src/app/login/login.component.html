@@ -1,0 +1,22 @@
+<div class="login-container">
+    <h2>Login / Sign Up</h2>
+  
+    <button (click)="signInWithGoogle()">Sign In with Google</button>
+    <button (click)="signInWithFacebook()">Sign In with Facebook</button>
+  
+    <form (ngSubmit)="signInWithEmail()">
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input type="email" id="email" [(ngModel)]="email" name="email" required>
+      </div>
+  
+      <div class="form-group">
+        <label for="password">Password</label>
+        <input type="password" id="password" [(ngModel)]="password" name="password" required>
+      </div>
+  
+      <button type="submit">Sign In with Email</button>
+      <p *ngIf="loginErrorMessage" class="error-message">{{ loginErrorMessage }}</p>
+    </form>
+  </div>
+  
